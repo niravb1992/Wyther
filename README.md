@@ -10,6 +10,9 @@ Prerequisites
 
 Usage
 =================
+
+Example:
+
 ```
 from wyther.Wyther import Wyther
 APP_ID = 'YOUR APP ID'
