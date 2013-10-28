@@ -1,4 +1,3 @@
-
 Wyther
 ================
 A simple Python wrapper class for Yahoo Weather API
@@ -11,7 +10,7 @@ Prerequisites
 Usage
 =================
 
-1. Get weather by place:
+Get weather by place
 
 ```
 from wyther.Wyther import Wyther
@@ -20,13 +19,13 @@ wyther = Wyther(APP_ID)
 print wyther.by_place(('atlanta','us'))
 ```
 
-The above example gets the weather in Fahrenheit. To get the weather in Celsius:
+The above example gets the weather in Fahrenheit. To get the weather in Celsius
 
 ```
 wyther.by_place(('atlanta','us'),'c')
 ```
 
-2. Get weather by woeid:
+Get weather by woeid
 
 ```
 wyther.by_woeid(2442047) # gets the weather in fahrenheit of los angeles
