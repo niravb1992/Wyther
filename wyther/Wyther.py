@@ -19,7 +19,10 @@ class Wyther(object):
 		root = ET.fromstring(x.text)
 		return root[self.ROOT_INDEX][self.ROOT_INDEX].text
 
-	def get_weather(self,place,units='f'):
-		x = requests.get(self.Y_WEATHER_API_URL,params={'w':self.get_place_woeid(place),'u':units})
+	def by_woeid(self,woeid,units='f'):
+		x = requests.get(self.Y_WEATHER_API_URL,params={'w':woeid,'u':units})
 		root = ET.fromstring(x.text)
 		return root[self.ROOT_INDEX][self.ITEM_INDEX][self.YWEATHER_CONDITION_INDEX].get('temp')
+
+	def by_place(self,place,units='f'):
+		return self.by_woeid(self.get_place_woeid(place),units)
