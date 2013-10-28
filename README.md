@@ -19,3 +19,9 @@ APP_ID = 'YOUR APP ID'
 w = Wyther(APP_ID)
 print w.get_weather(('atlanta','us'))
 ```
+
+The above example gets the weather in Fahrenheit. To get the weather in Celsius:
+
+```
+w.get_weather(('atlanta','us'),'c')
+```
