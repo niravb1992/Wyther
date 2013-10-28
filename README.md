@@ -10,13 +10,13 @@ Prerequisites
 Usage
 =================
 
-Get weather by place
+Get weather by place (a tuple of city and country)
 
 ```
 from wyther.Wyther import Wyther
 APP_ID = 'YOUR APP ID'
 wyther = Wyther(APP_ID)
-print wyther.by_place(('atlanta','us')) # input parameter is the tuple: ('city','country')
+print wyther.by_place(('atlanta','us'))
 ```
 
 The above example gets the weather in Fahrenheit. To get the weather in Celsius
