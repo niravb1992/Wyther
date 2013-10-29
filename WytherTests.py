@@ -11,7 +11,9 @@ class WytherTests(unittest.TestCase):
 
 	def test_normalcase(self):
 		self.wyther.by_place(('atlanta','us'))
+		self.wyther.by_place(('atlanta','us'),'c')
 		self.wyther.by_woeid(2357024)
+		self.wyther.by_woeid(2357024,'c')
 		self.wyther.get_place_woeid(('atlanta','us'))
 
 	def test_invalidappid(self):
