@@ -4,7 +4,7 @@ from wyther.Wyther import *
 
 class WytherTests(unittest.TestCase):
 
-	APP_ID = 'YOUR APP ID'
+	APP_ID = '1TNpyTfV34GgoBAzHgBXEa4HZNKgqCX.gFbQgIxZj8eVbI.pfjFX3Bm.NgvcVPVF11uu'
 
 	def setUp(self):
 		self.wyther = Wyther(self.APP_ID)
@@ -27,6 +27,7 @@ class WytherTests(unittest.TestCase):
 
 	def test_invalidplace(self):
 		self.assertRaises(InvalidPlaceException,self.wyther.by_place,('nowhere','nowhere'))
+		self.assertRaises(InvalidPlaceException,self.wyther.by_place,'blahblah')
 
 if __name__ == '__main__':
     unittest.main()
