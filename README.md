@@ -36,3 +36,4 @@ From the Wyther directory, run
 ```
 python WytherTests.py
 ```
+NOTE: make sure you update the APP_ID variable before running the tests!

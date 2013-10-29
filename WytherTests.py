@@ -4,7 +4,7 @@ from wyther.Wyther import *
 
 class WytherTests(unittest.TestCase):
 
-	APP_ID = '1TNpyTfV34GgoBAzHgBXEa4HZNKgqCX.gFbQgIxZj8eVbI.pfjFX3Bm.NgvcVPVF11uu'
+	APP_ID = 'APP ID'
 
 	def setUp(self):
 		self.wyther = Wyther(self.APP_ID)
