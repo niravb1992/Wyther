@@ -2,6 +2,13 @@
 import requests
 import xml.etree.ElementTree as ET
 
+
+class InvalidAppIdException(Exception):
+	pass
+
+class InvalidWoeIdException(Exception):
+	pass
+
 class Wyther(object):
 
 	Y_GEOPLANET_API_URL = "http://where.yahooapis.com/v1/places.q"
@@ -17,6 +24,8 @@ class Wyther(object):
 	def get_place_woeid(self, place):
 		x = requests.get(self.Y_GEOPLANET_API_URL+'('+'%20'.join(place)+')',params={'appid':self.app_id})
 		root = ET.fromstring(x.text)
+		if root[self.ROOT_INDEX].text == '400 Bad Request':
+			raise InvalidAppIdException()
 		return root[self.ROOT_INDEX][self.ROOT_INDEX].text
 
 	def by_woeid(self,woeid,units='f'):
