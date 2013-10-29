@@ -9,7 +9,6 @@ Prerequisites
 
 Usage
 =================
-
 Get weather by place (a tuple of city and country)
 
 ```
@@ -29,4 +28,11 @@ Get weather by woeid
 
 ```
 wyther.by_woeid(2442047) # gets the weather in fahrenheit of los angeles
+```
+
+Tests
+================
+From the Wyther directory, run
+```
+python WytherTests.py
 ```
