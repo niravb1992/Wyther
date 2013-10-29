@@ -9,7 +9,7 @@ Prerequisites
 
 Usage
 =================
-Get weather by place (a tuple of city and country)
+Get weather by place (a tuple of city and country or city and state)
 
 ```
 from wyther.Wyther import Wyther
