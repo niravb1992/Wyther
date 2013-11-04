@@ -4,8 +4,9 @@ A simple Python wrapper class for Yahoo Weather API
 
 Prerequisites
 =================
-1. Python requests module must be installed (http://www.python-requests.org/en/latest/)
-2. You must register at http://developer.yahoo.com/wsregapp to get an appid. 
+1. pip install requests
+2. pip install elementtree (if necessary)
+3. Register at http://developer.yahoo.com/wsregapp to get an appid. 
 
 Usage
 =================
