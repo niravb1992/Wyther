@@ -4,9 +4,7 @@ A simple Python wrapper to the Yahoo Weather API
 
 Prerequisites
 =================
-1. pip install requests
-2. pip install elementtree (if necessary)
-3. Register at http://developer.yahoo.com/wsregapp to get an appid. 
+1. Register at http://developer.yahoo.com/wsregapp to get an appid. 
 
 Usage
 =================
