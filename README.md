@@ -1,6 +1,6 @@
 Wyther
 ================
-A simple Python wrapper class for Yahoo Weather API
+A simple Python wrapper to the Yahoo Weather API
 
 Prerequisites
 =================
