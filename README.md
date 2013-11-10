@@ -10,7 +10,7 @@ Prerequisites
 Installation
 =================
 
-Download the source code from https://github.com/niravb1992/Wyther/releases. Extract it, cd into the Wyther directory, and run:
+Download the source code, extract it, cd into the Wyther directory, and run:
 
 	python setup.py install
 
