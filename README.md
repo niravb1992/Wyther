@@ -12,29 +12,22 @@ Installation
 
 From the Wyther directory, run:
 
-```
-python setup.py install
-```
+	python setup.py install
 
 Usage
 =================
 Get weather by place (a tuple of city and country or city and state)
 
-```
-from wyther.Wyther import Wyther
-APP_ID = 'YOUR APP ID'
-wyther = Wyther(APP_ID)
-print wyther.by_place(('atlanta','us'))
-```
+
+	from wyther.Wyther import Wyther
+	APP_ID = 'YOUR APP ID'
+	wyther = Wyther(APP_ID)
+	print wyther.by_place(('atlanta','us'))
 
 The above example gets the weather in Fahrenheit. To get the weather in Celsius
 
-```
-wyther.by_place(('atlanta','us'),'c')
-```
+	wyther.by_place(('atlanta','us'),'c')
 
 Get weather by woeid
 
-```
-wyther.by_woeid(2442047) # gets the weather in fahrenheit of los angeles
-```
+	wyther.by_woeid(2442047) # gets the weather in fahrenheit of los angeles
