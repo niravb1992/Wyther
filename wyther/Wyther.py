@@ -1,4 +1,3 @@
-
 import requests
 import xml.etree.ElementTree as ET
 
@@ -26,7 +25,7 @@ class InvalidPlaceException(Exception):
 
 class Wyther(object):
     """
-    A simple wrapper to the Yahoo Weather API
+    The weather of a place using Yahoo Weather API
     """
     Y_GEOPLANET_API_URL = "http://where.yahooapis.com/v1/places.q"
     Y_WEATHER_API_URL = "http://weather.yahooapis.com/forecastrss"
