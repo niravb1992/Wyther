@@ -25,7 +25,7 @@ class InvalidPlaceException(Exception):
 
 class Wyther(object):
     """
-    The weather of a place using Yahoo Weather API
+    A class to get the temperature of a place using Yahoo Weather API
     """
     Y_GEOPLANET_API_URL = "http://where.yahooapis.com/v1/places.q"
     Y_WEATHER_API_URL = "http://weather.yahooapis.com/forecastrss"
