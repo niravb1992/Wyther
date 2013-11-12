@@ -1,6 +1,6 @@
 Wyther
 ================
-A simple Python wrapper to the Yahoo Weather API
+Python module to get the weather of a place using Yahoo Weather API
 
 Prerequisites
 =================
