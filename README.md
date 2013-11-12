@@ -1,6 +1,6 @@
 Wyther
 ================
-Python module to get the weather of a place using Yahoo Weather API
+Python module to get the temperature of a place using Yahoo Weather API
 
 Prerequisites
 =================
