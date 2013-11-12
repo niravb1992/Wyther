@@ -34,6 +34,6 @@ Get weather by woeid
 
 Documentation
 ==================
-HTML documentation available in docs folder, generated using epydoc
+HTML documentation available in docs/html folder, generated using epydoc
 
     epydoc --html wyther -o docs/html
