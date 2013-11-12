@@ -31,3 +31,9 @@ The above example gets the weather in Fahrenheit. To get the weather in Celsius
 Get weather by woeid
 
 	wyther.by_woeid(2442047) # gets the weather in fahrenheit of los angeles
+
+Documentation
+==================
+HTML documentation available in docs folder, generated using epydoc
+
+    epydoc --html wyther -o docs/html

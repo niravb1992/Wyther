@@ -36,4 +36,4 @@ class WytherTests(unittest.TestCase):
 		self.assertRaises(InvalidPlaceException,self.wyther.by_place,'blahblah')
 
 if __name__ == '__main__':
-    unittest.main(argv=[sys.argv[0]])
+    unittest.main()
