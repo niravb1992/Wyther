@@ -1,6 +1,6 @@
 Wyther
 ================
-A simple Python wrapper to the Yahoo Weather API
+Python module to get the temperature of a place using Yahoo Weather API
 
 Prerequisites
 =================
@@ -16,7 +16,7 @@ Download the source code, extract it, cd into the Wyther directory, and run:
 
 Usage
 =================
-Get weather by place (a tuple of city and country or city and state)
+Get temperature by place (a tuple of city and country or city and state)
 
 
 	from wyther.Wyther import Wyther
@@ -24,13 +24,13 @@ Get weather by place (a tuple of city and country or city and state)
 	wyther = Wyther(APP_ID)
 	print wyther.by_place(('atlanta','us'))
 
-The above example gets the weather in Fahrenheit. To get the weather in Celsius
+The above example gets the temperature in Fahrenheit. To get the temperature in Celsius
 
 	wyther.by_place(('atlanta','us'),'c')
 
-Get weather by woeid
+Get temperature by woeid
 
-	wyther.by_woeid(2442047) # gets the weather in fahrenheit of los angeles
+	wyther.by_woeid(2442047) # gets the temperature in fahrenheit of los angeles
 
 Documentation
 ==================
