@@ -84,7 +84,7 @@
 <a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"> </tt>
 <a name="Wyther"></a><div id="Wyther-def"><a name="L27"></a><tt class="py-lineno">27</tt> <a class="py-toggle" href="#" id="Wyther-toggle" onclick="return toggle('Wyther');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="wyther.Wyther.Wyther-class.html">Wyther</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="Wyther-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Wyther-expanded"><a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"><tt class="py-docstring">    A simple wrapper to the Yahoo Weather API</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"><tt class="py-docstring">    A class to get the temperature of a place using Yahoo Weather API</tt> </tt>
 <a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
 <a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">    <tt id="link-0" class="py-name" targets="Variable wyther.Wyther.Wyther.Y_GEOPLANET_API_URL=wyther.Wyther.Wyther-class.html#Y_GEOPLANET_API_URL"><a title="wyther.Wyther.Wyther.Y_GEOPLANET_API_URL" class="py-name" href="#" onclick="return doclink('link-0', 'Y_GEOPLANET_API_URL', 'link-0');">Y_GEOPLANET_API_URL</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"http://where.yahooapis.com/v1/places.q"</tt> </tt>
 <a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">    <tt id="link-1" class="py-name" targets="Variable wyther.Wyther.Wyther.Y_WEATHER_API_URL=wyther.Wyther.Wyther-class.html#Y_WEATHER_API_URL"><a title="wyther.Wyther.Wyther.Y_WEATHER_API_URL" class="py-name" href="#" onclick="return doclink('link-1', 'Y_WEATHER_API_URL', 'link-1');">Y_WEATHER_API_URL</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"http://weather.yahooapis.com/forecastrss"</tt> </tt>
@@ -103,12 +103,12 @@
 </div><a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"> </tt>
 <a name="Wyther.get_place_woeid"></a><div id="Wyther.get_place_woeid-def"><a name="L46"></a><tt class="py-lineno">46</tt> <a class="py-toggle" href="#" id="Wyther.get_place_woeid-toggle" onclick="return toggle('Wyther.get_place_woeid');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="wyther.Wyther.Wyther-class.html#get_place_woeid">get_place_woeid</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">place</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="Wyther.get_place_woeid-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Wyther.get_place_woeid-expanded"><a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
-<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt class="py-docstring">        Returns the WOEID of a place</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt class="py-docstring">        Returns the woeid of a place</tt> </tt>
 <a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
 <a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt class="py-docstring">        @type place: tuple</tt> </tt>
 <a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"><tt class="py-docstring">        @param place: a tuple of city and country or city and state</tt> </tt>
 <a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: str</tt> </tt>
-<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt class="py-docstring">        @return: the WOEID of place</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt class="py-docstring">        @return: the woeid of place</tt> </tt>
 <a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"><tt class="py-docstring">        @raise InvalidAppIdException: If the app id provided is invalid</tt> </tt>
 <a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"><tt class="py-docstring">        @raise InvalidPlaceException: If the place tuple provided is invalid</tt> </tt>
 <a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
@@ -123,7 +123,7 @@
 </div><a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line"> </tt>
 <a name="Wyther.by_woeid"></a><div id="Wyther.by_woeid-def"><a name="L66"></a><tt class="py-lineno">66</tt> <a class="py-toggle" href="#" id="Wyther.by_woeid-toggle" onclick="return toggle('Wyther.by_woeid');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="wyther.Wyther.Wyther-class.html#by_woeid">by_woeid</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">woeid</tt><tt class="py-op">,</tt><tt class="py-param">units</tt><tt class="py-op">=</tt><tt class="py-string">'f'</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="Wyther.by_woeid-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Wyther.by_woeid-expanded"><a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
-<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"><tt class="py-docstring">        Returns the weather of a place by woeid</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"><tt class="py-docstring">        Returns the temperature of a place by woeid</tt> </tt>
 <a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
 <a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line"><tt class="py-docstring">        @type woeid: int</tt> </tt>
 <a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line"><tt class="py-docstring">        @param woeid: the woeid of a place</tt> </tt>
@@ -141,7 +141,7 @@
 </div><a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line"> </tt>
 <a name="Wyther.by_place"></a><div id="Wyther.by_place-def"><a name="L84"></a><tt class="py-lineno">84</tt> <a class="py-toggle" href="#" id="Wyther.by_place-toggle" onclick="return toggle('Wyther.by_place');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="wyther.Wyther.Wyther-class.html#by_place">by_place</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">place</tt><tt class="py-op">,</tt><tt class="py-param">units</tt><tt class="py-op">=</tt><tt class="py-string">'f'</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="Wyther.by_place-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Wyther.by_place-expanded"><a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
-<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line"><tt class="py-docstring">        Returns the weather of a place by woeid</tt> </tt>
+<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line"><tt class="py-docstring">        Returns the temperature of a place</tt> </tt>
 <a name="L87"></a><tt class="py-lineno">87</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
 <a name="L88"></a><tt class="py-lineno">88</tt>  <tt class="py-line"><tt class="py-docstring">        @type place: tuple</tt> </tt>
 <a name="L89"></a><tt class="py-lineno">89</tt>  <tt class="py-line"><tt class="py-docstring">        @param place: a tuple of city and country or city and state</tt> </tt>
@@ -184,7 +184,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Nov 11 21:13:37 2013
+    Generated by Epydoc 3.0.1 on Sun Nov 17 15:19:39 2013
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

@@ -26,7 +26,7 @@ class InvalidPlaceException(Exception):
 
 class Wyther(object):
     """
-    A simple wrapper to the Yahoo Weather API
+    A class to get the temperature of a place using Yahoo Weather API
     """
     Y_GEOPLANET_API_URL = "http://where.yahooapis.com/v1/places.q"
     Y_WEATHER_API_URL = "http://weather.yahooapis.com/forecastrss"
@@ -45,12 +45,12 @@ class Wyther(object):
 
     def get_place_woeid(self, place):
         """
-        Returns the WOEID of a place
+        Returns the woeid of a place
 
         @type place: tuple
         @param place: a tuple of city and country or city and state
         @rtype: str
-        @return: the WOEID of place
+        @return: the woeid of place
         @raise InvalidAppIdException: If the app id provided is invalid
         @raise InvalidPlaceException: If the place tuple provided is invalid
         """
@@ -65,7 +65,7 @@ class Wyther(object):
 
     def by_woeid(self,woeid,units='f'):
         """
-        Returns the weather of a place by woeid
+        Returns the temperature of a place by woeid
 
         @type woeid: int
         @param woeid: the woeid of a place
@@ -83,7 +83,7 @@ class Wyther(object):
 
     def by_place(self,place,units='f'):
         """
-        Returns the weather of a place by woeid
+        Returns the temperature of a place
 
         @type place: tuple
         @param place: a tuple of city and country or city and state
