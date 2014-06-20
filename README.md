@@ -31,9 +31,3 @@ The above example gets the temperature in Fahrenheit. To get the temperature in 
 Get temperature by woeid
 
 	wyther.by_woeid(2442047) # gets the temperature in fahrenheit of los angeles
-
-Documentation
-==================
-HTML documentation available in docs/html folder, generated using epydoc
-
-    epydoc --html wyther -o docs/html
