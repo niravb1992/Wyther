@@ -1,5 +1,0 @@
-
--Generate documentation:
-
-pip install epydoc
-epydoc --html wyther -o docs (from Wyther root directory)
