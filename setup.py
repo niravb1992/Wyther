@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='Wyther',
-    version='0.1.0',
+    version='0.1.4',
     author='Nirav Bhatia',
     author_email='bnirav23@gmail.com',
     packages=['wyther'],
