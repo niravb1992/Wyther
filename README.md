@@ -4,8 +4,7 @@ Python module to get the temperature of a place using Yahoo Weather API
 
 Prerequisites
 =================
-1. Register at http://developer.yahoo.com/wsregapp to get an appid.
-2. Install requests module http://www.python-requests.org/en/latest/
+Register at http://developer.yahoo.com/wsregapp to get an appid.
 
 Installation
 =================
