@@ -1,6 +1,6 @@
 About
 ================
-Python module to get the temperature of a place using Yahoo Weather API
+wyther is a Python module to get the temperature of a place using Yahoo Weather API
 
 Prerequisites
 =================
@@ -11,7 +11,9 @@ Installation
 
 Download the source code, extract it, cd into the Wyther directory, and run:
 
-	python setup.py install
+````
+python setup.py install
+````
 
 Usage
 =================
