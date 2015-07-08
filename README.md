@@ -1,6 +1,6 @@
 About
 ================
-wyther is a Python module to get the temperature of a place using Yahoo Weather API
+wyther is a Python module to get the temperature of a place using [Yahoo Weather API](https://developer.yahoo.com/weather/)
 
 Prerequisites
 =================
