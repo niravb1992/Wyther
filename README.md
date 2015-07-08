@@ -1,4 +1,4 @@
-Wyther
+About
 ================
 Python module to get the temperature of a place using Yahoo Weather API
 
