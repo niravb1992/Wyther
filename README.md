@@ -2,10 +2,6 @@ About
 ================
 wyther is a Python module to get the temperature of a place using [Yahoo Weather API](https://developer.yahoo.com/weather/)
 
-Prerequisites
-=================
-Register at http://developer.yahoo.com/wsregapp to get an appid.
-
 Installation
 =================
 
@@ -17,12 +13,10 @@ python setup.py install
 
 Usage
 =================
-Get temperature by place (a tuple of city and country or city and state)
-
+Get temperature by place (a tuple/string of city and country or city and state)
 
 	from wyther.Wyther import Wyther
-	APP_ID = 'YOUR APP ID'
-	wyther = Wyther(APP_ID)
+	wyther = Wyther()
 	print wyther.by_place(('atlanta','us'))
 
 The above example gets the temperature in Fahrenheit. To get the temperature in Celsius
