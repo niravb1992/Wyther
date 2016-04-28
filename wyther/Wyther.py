@@ -22,7 +22,6 @@ class Wyther(object):
         @param units: the units of the weather
         @rtype: float
         @return: the weather of the place
-        @raise InvalidWoeIdException: If the woeid provided is invalid
         """
         response = requests.get(self.Y_WEATHER_API_URL, params={
         'q':'select item.condition from weather.forecast where u="'+units+'" and woeid = '+str(woeid),
