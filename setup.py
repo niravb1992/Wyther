@@ -7,7 +7,6 @@ setup(
     name='Wyther',
     version='0.1.4',
     author='Nirav Bhatia',
-    author_email='bnirav23@gmail.com',
     packages=['wyther'],
     url='https://github.com/niravb1992/Wyther',
     license='LICENSE.txt',
